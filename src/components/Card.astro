@@ -1,0 +1,46 @@
+---
+import { Image } from "astro:assets";
+import Date from "./Date.astro";
+
+const { post } = Astro.props;
+const { title, pubDate, summary, coverImage, coverAlt } = post.data;
+---
+
+<article>
+    <a href={`/blog/${post.slug}/`}>
+        <Image
+            src={coverImage}
+            alt={coverAlt}
+            quality={"mid"}
+            class="card-image shadow"
+        />
+    </a>
+
+    <Date date={pubDate} class="date" />
+
+    <h2>
+        <a href={`/blog/${post.slug}/`}>{title}</a>
+    </h2>
+
+    <div class="summary">
+        {summary}
+    </div>
+</article>
+
+<style>
+    .date {
+        padding-block-start: 0.75em;
+        padding-block-end: 0.5em;
+    }
+
+    h2 {
+        margin-block-end: 0.75em;
+        font-family: var(--ff-serif);
+        font-size: var(--fs-6);
+        line-height: 1.2;
+    }
+
+    .summary {
+        line-height: 1.5;
+    }
+</style>

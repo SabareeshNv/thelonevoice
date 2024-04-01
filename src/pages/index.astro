@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import FirstCard from "../components/FirstCard.astro";
+import Card from "../components/Card.astro";
+import SearchField from "../components/SearchField.astro";
+import TagCloud from "../components/TagCloud.astro";
+
+import { fetchAndFilterPosts } from "../utils/helpers";
+
+const posts = await fetchAndFilterPosts();
+
+const title = "Home Page";
+const description = "home page";
+---
+
+<BaseLayout {title} {description}>
+	<main class="wrapper py frame-grid">
+		<div>
+			<!-- First Card -->
+			{posts.slice(0, 1).map((post) => <FirstCard {post} />)}
+			<div class="card-grid">
+				<!-- Rest of Cards -->
+				{posts.slice(1).map((post) => <Card {post} />)}
+			</div>
+		</div>
+		<aside class="sidebar">
+			<SearchField />
+			<TagCloud />
+		</aside>
+	</main>
+</BaseLayout>

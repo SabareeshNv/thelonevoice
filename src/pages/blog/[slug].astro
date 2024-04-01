@@ -1,0 +1,20 @@
+---
+import BlogLayout from "../../layouts/BlogLayout.astro";
+
+import { fetchAndFilterPosts } from "../../utils/helpers";
+
+export async function getStaticPaths() {
+    const posts = await fetchAndFilterPosts();
+    return posts.map((post) => ({
+        params: { slug: post.slug },
+        props: post,
+    }));
+}
+
+const post = Astro.props;
+const { Content } = await post.render();
+---
+
+<BlogLayout {...post.data}>
+    <Content />
+</BlogLayout>

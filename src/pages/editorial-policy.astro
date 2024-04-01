@@ -1,0 +1,83 @@
+---
+import BaseLayout from "src/layouts/BaseLayout.astro";
+import "../styles/typography.css";
+
+const title = "Editorial Policy";
+const description = "Our editorial policy";
+---
+
+<BaseLayout {title} {description}>
+    <main class="wrapper py">
+        <div class="typography">
+            <h1 class="heading">{title}</h1>
+
+            <p>
+                Welcome to my corner of the internet! I'm excited to share my
+                thoughts and explorations on politics, economy, culture,
+                fashion, and anything else that catches my interest. This
+                editorial policy outlines the principles that guide my content
+                creation, ensuring a friendly and enriching experience for my
+                readers
+            </p>
+
+            <h3>Editorial integrity</h3>
+            <p>
+                I uphold the values of accuracy, objectivity, and fairness in
+                all my writings. Before publishing, I thoroughly research and
+                fact-check information from credible sources.
+            </p>
+            <p>
+                While I express my opinions in my articles, I strive to present
+                diverse perspectives and a variety of viewpoints will be
+                explored on complex issues, allowing readers to form their own
+                informed opinions.
+            </p>
+
+            <blockquote>
+                <p>
+                    Originality and Insight: Efforts will be made to provide
+                    unique perspectives and fresh insights on the featured
+                    topics.
+                </p>
+            </blockquote>
+
+            <h3>Ethical Considerations</h3>
+            <p>
+                Transparency is key to maintaining trust with my audience. I
+                will disclose any potential conflicts of interest or biases that
+                may influence my content. Sponsored content or partnerships will
+                be clearly identified as such, ensuring transparency and
+                integrity in my collaborations. All content is original unless
+                quoted or sourced from external entities.
+            </p>
+
+            <p>
+                I am committed to transparency and accuracy. If an error is
+                found in one of the article, you may <a href="/contact"
+                    >contact me</a
+                >; i will correct it promptly and transparently.
+            </p>
+
+            <h3>Content Exclusions:</h3>
+            <ul>
+                <li>Content that is hateful, discriminatory, or offensive.</li>
+                <li>False or misleading information.</li>
+                <li>Spam or irrelevant content.</li>
+            </ul>
+
+            <h3>Policy Updates:</h3>
+            <p>
+                As the blog grows, i may update this policy to reflect the
+                changing content and audience.
+            </p>
+            <!-- <blockquote>
+                <p>
+                    A note on AI: All our blog content is made by humans for
+                    humans. While generative AI tools such as ChatGPT may be
+                    used for research, all articles are written and verified by
+                    humans.
+                </p>
+            </blockquote> -->
+        </div>
+    </main>
+</BaseLayout>

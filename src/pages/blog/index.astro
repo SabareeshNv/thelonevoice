@@ -1,0 +1,39 @@
+---
+import BaseLayout from "src/layouts/BaseLayout.astro";
+import Card from "src/components/Card.astro";
+import SearchField from "src/components/SearchField.astro";
+import TagCloud from "src/components/TagCloud.astro";
+
+import { fetchAndFilterPosts } from "../../utils/helpers";
+
+// export async function getStaticPaths({ paginate }) {
+//   const allPosts = await getCollection("blog");
+//   const filteredPosts: CollectionEntry<"blog">[] = filterPosts(allPosts);
+
+//   return paginate(filteredPosts, { pageSize: 5 }).map(({ params, props }) => ({
+//     props: props,
+//     params: {
+//       ...params,
+//       page: params.page ? `page-${params.page}` : undefined,
+//     },
+//   }));
+// }
+
+const posts = await fetchAndFilterPosts();
+
+const title = "Blog | TheLoneVoice";
+const description = "See all our blog posts | TheLoneVoice";
+---
+
+<BaseLayout {title} {description}>
+    <main class="wrapper py frame-grid">
+        <div class="card-grid">
+            {posts.map((post) => <Card {post} />)}
+        </div>
+
+        <aside class="sidebar">
+            <SearchField />
+            <TagCloud />
+        </aside>
+    </main>
+</BaseLayout>

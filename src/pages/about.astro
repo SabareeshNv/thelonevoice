@@ -1,0 +1,42 @@
+---
+import BaseLayout from "src/layouts/BaseLayout.astro";
+import "../styles/typography.css";
+
+const title = "About This Blog";
+const description = "Learn more about us";
+---
+
+<BaseLayout {title} {description}>
+    <main class="wrapper py">
+        <div class="typography">
+            <h1 class="heading">{title}</h1>
+            <p>
+                This is my humble attempt at being a blogger, writing about
+                topics i find interesting and wish to spread those ideas and
+                information into the world.
+            </p>
+            <p>
+                I believe in the power of knowledge and dialogue to drive
+                positive change. Through well-researched articles and thoughtful
+                analysis, i aim to shed light on pressing issues facing our
+                society today, from economic inequalities to political reforms.
+                i hope to provide a platform for informed discussion on the
+                critical issues of our time. I strive to present complex topics
+                in a way that is accessible to a broad audience, encouraging
+                critical thinking and intellectual engagement.
+            </p>
+            <p>
+                I hope you find the blog a joy to read and tickles your
+                intellectual curiosity. Please <a href="/contact/">contact me</a
+                > if you have something to articulate. Thank you for being a part
+                of my community.
+            </p>
+        </div>
+    </main>
+</BaseLayout>
+
+<style>
+    h1 {
+        font-size: var(--fs-7);
+    }
+</style>

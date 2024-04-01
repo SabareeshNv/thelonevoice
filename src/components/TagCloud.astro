@@ -1,0 +1,46 @@
+---
+import { fetchAndFilterPosts, generateTagData } from "../utils/helpers";
+
+const posts = await fetchAndFilterPosts();
+
+const uniqueTags = [
+    ...new Set(posts.flatMap((post) => post.data.tags)),
+] as string[];
+
+const tagData: { name: string; slug: string }[] = generateTagData(uniqueTags);
+---
+
+<tag-cloud>
+    <div class="heading">Topics</div>
+    <p>Here are all the topics i've written on</p>
+    <div class="flex-row">
+        {tagData.map((tag) => <a href={`/tag/${tag.slug}`}>{tag.name}</a>)}
+    </div>
+</tag-cloud>
+
+<style>
+    .heading {
+        margin-block-end: 0.75rem;
+        font-family: var(--ff-serif);
+        font-size: var(--fs-6);
+    }
+
+    p {
+        margin-block-end: 1rem;
+    }
+
+    div {
+        gap: 0.5rem;
+    }
+
+    a {
+        background-color: var(--clr-accent);
+        padding: 0.5rem;
+        font-size: var(--fs-3);
+        border-radius: 0.25rem;
+
+        &:hover {
+            background-color: var(--clr-accent-hover);
+        }
+    }
+</style>

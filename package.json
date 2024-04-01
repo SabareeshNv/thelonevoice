@@ -1,0 +1,29 @@
+{
+  "name": "thelonevoice",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build && jampack ./dist",
+    "preview": "astro preview",
+    "astro": "astro",
+    "clean": "rm -rf ./dist ./.astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.5.10",
+    "@astrojs/rss": "^4.0.5",
+    "@astrojs/sitemap": "^3.1.2",
+    "@fontsource/alegreya": "^5.0.12",
+    "@fontsource/alegreya-sans": "^5.0.12",
+    "astro": "^4.5.12",
+    "astro-pagefind": "^1.5.0",
+    "pagefind": "^1.0.4",
+    "postcss-nested": "^6.0.1",
+    "sharp": "^0.33.3",
+    "typescript": "^5.4.3"
+  },
+  "devDependencies": {
+    "@divriots/jampack": "^0.23.4"
+  }
+}
