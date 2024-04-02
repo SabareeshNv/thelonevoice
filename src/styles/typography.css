@@ -51,19 +51,28 @@
     blockquote {
         padding: 1.25em 1.5em;
         border-inline-start: 4px solid #57534e;
-        border-inline-start: 4px solid var(--clr-dark);
-        background-color: hsl(0deg 0% 96%);
-        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+        /* background-color: hsl(0deg 0% 96%); */
+        background-color: var(--clr-accent);
 
         @media (min-width: 600px) {
             margin-inline: 1em;
         }
     }
 
+    code {
+        background-color: var(--clr-accent);
+        padding-block: 0.1rem;
+    }
+
     pre {
         padding: 1em;
         border-radius: 0.25em;
         font-size: 1.1rem;
+
+        code {
+            background-color: unset;
+            padding-block: auto;
+        }
     }
 
     a {

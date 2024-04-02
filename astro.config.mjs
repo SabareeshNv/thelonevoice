@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 
+import icon from "astro-icon";
 import sitemap from "@astrojs/sitemap";
 import pagefind from "astro-pagefind";
 
@@ -9,5 +10,5 @@ export default defineConfig({
   build: {
     assets: "_assets"
   },
-  integrations: [sitemap(),pagefind()]
+  integrations: [icon(), sitemap(), pagefind()]
 });
