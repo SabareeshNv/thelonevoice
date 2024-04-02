@@ -16,10 +16,10 @@ const description = "home page";
 <BaseLayout {title} {description}>
 	<main class="wrapper py frame-grid">
 		<div>
-			<!-- First Card -->
+			{/* First Card */}
 			{posts.slice(0, 1).map((post) => <FirstCard {post} />)}
 			<div class="card-grid">
-				<!-- Rest of Cards -->
+				{/* Rest of Cards */}
 				{posts.slice(1).map((post) => <Card {post} />)}
 			</div>
 		</div>
