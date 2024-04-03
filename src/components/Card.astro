@@ -8,15 +8,10 @@ const { title, pubDate, summary, coverImage, coverAlt } = post.data;
 
 <article>
     <a href={`/blog/${post.slug}/`}>
-        <Image
-            src={coverImage}
-            alt={coverAlt}
-            quality={"mid"}
-            class="card-image shadow"
-        />
+        <Image src={coverImage} alt={coverAlt} class="card-image shadow" />
     </a>
 
-    <Date date={pubDate} class="date" />
+    <Date date={pubDate} class="card-date" />
 
     <h2>
         <a href={`/blog/${post.slug}/`}>{title}</a>
@@ -28,7 +23,7 @@ const { title, pubDate, summary, coverImage, coverAlt } = post.data;
 </article>
 
 <style>
-    .date {
+    .card-date {
         padding-block-start: 0.75em;
         padding-block-end: 0.5em;
     }

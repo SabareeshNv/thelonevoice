@@ -5,16 +5,16 @@ import { Image } from "astro:assets";
 const { title, pubDate, coverImage, coverAlt } = Astro.props;
 ---
 
-<section>
+<section class="hero-section">
     <div class="hero-head wrapper">
-        <Date date={pubDate} class="date" />
+        <Date date={pubDate} class="hero-date" />
         <h1 class="hero-title">{title}</h1>
     </div>
     <Image
         src={coverImage}
         alt={coverAlt}
         widths={[600, 900, 1300]}
-        sizes={`(max-width: 800px) 600px, (min-width: 800px) 900px, (min-width: 1100px) 1300px`}
+        sizes={`(max-width: 800px) 600w, (max-width: 1100px) 900w, (min-width: 1100px) 1300w`}
         quality={"max"}
         loading={"eager"}
         fetchpriority={"high"}
@@ -25,7 +25,7 @@ const { title, pubDate, coverImage, coverAlt } = Astro.props;
 </section>
 
 <style>
-    section {
+    .hero-section {
         @media (min-width: 800px) {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
@@ -59,7 +59,7 @@ const { title, pubDate, coverImage, coverAlt } = Astro.props;
         }
     }
 
-    .date {
+    .hero-date {
         font-size: var(--fs-4);
         padding-block-start: 1rem;
         padding-block-end: 0.75rem;
@@ -70,7 +70,7 @@ const { title, pubDate, coverImage, coverAlt } = Astro.props;
         }
     }
 
-    h1 {
+    .hero-title {
         font-size: var(--fs-8);
         font-family: var(--ff-serif);
         line-height: 1.2;
