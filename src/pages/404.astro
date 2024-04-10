@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 
 import notfound from "../assets/images/notfound.png";
 import BaseLayout from "src/layouts/BaseLayout.astro";
@@ -11,9 +11,10 @@ const description = "Page Not found";
 <BaseLayout {title} {description}>
     <main class="py wrapper">
         <div class="wrapper-small">
-            <Image
+            <Picture
                 src={notfound}
                 alt="page not found"
+                formats={["avif", "webp"]}
                 loading={"eager"}
                 fetchpriority={"high"}
                 decoding={"sync"}

@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import Date from "./Date.astro";
 
 const { post } = Astro.props;
@@ -8,9 +8,10 @@ const { title, pubDate, summary, coverImage, coverAlt } = post.data;
 
 <article>
     <a href={`/blog/${post.slug}/`}>
-        <Image
+        <Picture
             src={coverImage}
             alt={coverAlt}
+            formats={["avif", "webp"]}
             quality={"max"}
             loading={"eager"}
             fetchpriority={"high"}
