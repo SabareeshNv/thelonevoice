@@ -3,9 +3,8 @@
 }
 
 .typography {
-    max-width: 60ch;
+    max-width: 65ch;
     font-size: var(--fs-5);
-    margin-inline: auto;
     word-spacing: 3px;
 
     h1,

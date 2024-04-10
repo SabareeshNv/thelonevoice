@@ -4,12 +4,19 @@ import { slugify } from "../utils/helpers";
 const { tags } = Astro.props;
 ---
 
-<div class="taged-under">Tags</div>
-<div class="tags flex-row">
-    {tags.map((tag: string) => <a href={`/tag/${slugify(tag)}`}>#{tag}</a>)}
-</div>
+<article-tag-field>
+    <div class="taged-under">Tags</div>
+    <div class="tags flex-row">
+        {tags.map((tag: string) => <a href={`/tag/${slugify(tag)}`}>#{tag}</a>)}
+    </div>
+</article-tag-field>
 
 <style>
+    article-tag-field {
+        display: block;
+        margin-block-end: 1.5rem;
+    }
+
     .taged-under {
         color: var(--clr-brand);
         font-size: var(--fs-8);
