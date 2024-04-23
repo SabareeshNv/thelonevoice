@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "src/layouts/BaseLayout.astro";
+import "../styles/typography.css";
 
 const title = "Contact Us";
 const description = "How to contact us | LoneVoice.in";
@@ -7,8 +8,16 @@ const description = "How to contact us | LoneVoice.in";
 
 <BaseLayout {title} {description}>
     <main class="wrapper py">
-        <h1 class="heading">{title}</h1>
-        <p>Under Construction</p>
+        <div class="typography mx-auto">
+            <h1 class="heading">{title}</h1>
+            <p>Under Construction</p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis iure, eos voluptas est nemo optio natus temporibus quae
+                consequatur laborum nulla quisquam aut illum quam enim
+                laudantium officia distinctio dignissimos?
+            </p>
+        </div>
     </main>
 </BaseLayout>
 
