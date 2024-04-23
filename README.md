@@ -1,1 +1,1 @@
-# The Lone Voice Blog
+# Lone Voice Blog

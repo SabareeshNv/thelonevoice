@@ -47,7 +47,7 @@ body {
 }
 
 .wrapper {
-    max-width: 1400px;
+    max-width: 1600px;
     width: 90%;
     margin-inline: auto;
 
@@ -69,6 +69,7 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
+    object-position: center;
     text-align: center;
 }
 
@@ -106,6 +107,10 @@ body>footer {
 
 .shadow {
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.mx-auto {
+    margin-inline: auto;
 }
 
 .frame-grid {

@@ -10,7 +10,7 @@ coverAlt: "A picture of a villa"
 
 I am the man with no name, Zapp Brannigan! Bender, I didn't know you liked cooking. That's so cute. Who am I making this out to? But I know you in the future. I cleaned your poop. I'll get my kit!
 
-It doesn't look so shiny to me. Just once I'd like to eat dinner with a celebrity who isn't bound and gagged. We need rest. ** The spirit is willing, but the flesh is spongy and bruised.** _I didn't ask for a completely reasonable excuse!_ I asked you to get busy!
+It doesn't look so shiny to me. Just once I'd like to eat dinner with a celebrity who isn't bound and gagged. We need rest. **The spirit is willing, but the flesh is spongy and bruised.** _I didn't ask for a completely reasonable excuse!_ I asked you to get busy!
 
 ## Moving along…
 

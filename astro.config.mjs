@@ -6,7 +6,7 @@ import pagefind from "astro-pagefind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://thelonevoice.in",
+  site: "https://lonevoice.in",
   build: {
     assets: "_assets"
   },

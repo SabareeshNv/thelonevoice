@@ -2,8 +2,6 @@
 import BaseLayout from "./BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import BlogPostTags from "../components/BlogPostTags.astro";
-import SearchField from "src/components/SearchField.astro";
-import TagCloud from "src/components/TagCloud.astro";
 
 import "../styles/typography.css";
 
@@ -14,23 +12,12 @@ const { title, description, pubDate, tags, coverImage, coverAlt } = Astro.props;
     <main data-pagefind-body>
         <Hero {title} {pubDate} {coverImage} {coverAlt} />
 
-        {
-            /*<article class="wrapper py typography">
-            <slot />
-            <hr />
-            <BlogPostTags {tags} />
-        </article> */
-        }
-
-        <div class="wrapper py frame-grid">
-            <article class="typography">
+        <article class="wrapper py">
+            <div class="typography mx-auto">
                 <slot />
-            </article>
-
-            <aside class="sidebar">
-                <SearchField />
+                <hr />
                 <BlogPostTags {tags} />
-            </aside>
-        </div>
+            </div>
+        </article>
     </main>
 </BaseLayout>
