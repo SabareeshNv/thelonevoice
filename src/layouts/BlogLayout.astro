@@ -5,7 +5,10 @@ import BlogPostTags from "../components/BlogPostTags.astro";
 
 import "../styles/typography.css";
 
-const { title, description, pubDate, tags, coverImage, coverAlt } = Astro.props;
+const { description, pubDate, tags, coverImage, coverAlt } = Astro.props;
+// Need to change title as blog post title and html page title
+// should be made different
+let { title } = Astro.props;
 ---
 
 <BaseLayout {title} {description}>
