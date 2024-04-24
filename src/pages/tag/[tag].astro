@@ -34,8 +34,8 @@ export async function getStaticPaths() {
 const { tag } = Astro.params;
 const { posts } = Astro.props;
 
-const title = `All posts on the topic of ${unslugify(tag)}`;
-const description = `All posts on the topic of ${tag}`;
+const title = `Blog posts on the topic of ${unslugify(tag)} | LoneVoice.in`;
+const description = `All Blog posts on the topic of ${tag} | LoneVoice.in`;
 ---
 
 <BaseLayout {title} {description}>
