@@ -8,7 +8,8 @@ import pagefind from "astro-pagefind";
 export default defineConfig({
   site: "https://lonevoice.in",
   build: {
-    assets: "_assets"
+    assets: "_assets",
+    inlineStylesheets: "always",
   },
   integrations: [icon(), sitemap(), pagefind()]
 });
