@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
-import Hero from "../components/Hero.astro";
+// import Hero from "../components/Hero.astro";
+import Hero2 from "src/components/Hero2.astro";
 import BlogPostTags from "../components/BlogPostTags.astro";
 
 import "../styles/typography.css";
@@ -13,7 +14,7 @@ let { title } = Astro.props;
 
 <BaseLayout {title} {description}>
     <main data-pagefind-body>
-        <Hero {title} {pubDate} {coverImage} {coverAlt} />
+        <Hero2 {title} {pubDate} {coverImage} {coverAlt} />
 
         <article class="wrapper py">
             <div class="typography mx-auto">
