@@ -3,9 +3,8 @@
 }
 
 .typography {
-    max-width: 65ch;
+    max-width: 63ch;
     font-size: var(--fs-5);
-    word-spacing: 3px;
 
     h1,
     h2,
@@ -13,7 +12,7 @@
     h4,
     h5,
     h6 {
-        text-wrap: balance;
+        /* text-wrap: balance; */
         font-family: var(--ff-serif);
 
         &+* {
@@ -46,8 +45,8 @@
     blockquote {
         padding: 1.25em 1.5em;
         border-inline-start: 4px solid #57534e;
-        /* background-color: hsl(0deg 0% 96%); */
-        background-color: var(--clr-accent);
+        /* background-color: var(--clr-accent); */
+        background-color: hsl(0deg 0% 96%);
 
         @media (min-width: 600px) {
             margin-inline: 1em;

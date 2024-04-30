@@ -34,15 +34,15 @@ export async function getStaticPaths() {
 const { tag } = Astro.params;
 const { posts } = Astro.props;
 
-const title = `Blog posts on the topic of ${unslugify(tag)} | LoneVoice.in`;
-const description = `All Blog posts on the topic of ${tag} | LoneVoice.in`;
+const title = `Posts about ${unslugify(tag)} | LoneVoice.in`;
+const description = `All posts about ${tag} | LoneVoice.in`;
 ---
 
 <BaseLayout {title} {description}>
     <main class="wrapper py frame-grid">
         <div>
             <h1>
-                Posts on the topic of <span>{`" ${unslugify(tag)} "`}</span>
+                Posts about <span>{`" ${unslugify(tag)} "`}</span>
             </h1>
 
             <div class="card-grid">

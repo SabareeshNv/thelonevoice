@@ -48,7 +48,7 @@ body {
 }
 
 .wrapper {
-    max-width: 1600px;
+    max-width: 1400px;
     width: 90%;
     margin-inline: auto;
 
@@ -146,7 +146,7 @@ body>footer {
     aspect-ratio: 16 / 9;
 }
 
-.styled-tag {
+/* .styled-tag {
     color: var(--clr-dark);
     background-color: var(--clr-accent);
     padding: 0.25em;
@@ -155,6 +155,15 @@ body>footer {
     &:hover {
         filter: brightness(0.95);
     }
+} */
+
+.retro-look {
+    color: var(--clr-brand);
+    font-size: var(--fs-6);
+    font-weight: 700;
+    font-family: var(--ff-serif);
+    text-shadow: 1px 1px var(--clr-dark);
+    margin-block-end: 0.5rem;
 }
 
 .heading::after {

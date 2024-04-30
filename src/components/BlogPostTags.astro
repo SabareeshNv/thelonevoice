@@ -5,7 +5,7 @@ const { tags } = Astro.props;
 ---
 
 <article-tag-field>
-    <div class="taged-under">Tags</div>
+    <div class="retro-look taged-under">Tags</div>
     <div class="tags flex-row">
         {tags.map((tag: string) => <a href={`/tag/${slugify(tag)}`}>#{tag}</a>)}
     </div>
@@ -18,12 +18,8 @@ const { tags } = Astro.props;
     }
 
     .taged-under {
-        color: var(--clr-brand);
         font-size: var(--fs-8);
-        font-weight: 700;
-        font-family: var(--ff-serif);
         margin-block-start: 1em; /* To override default typography margins */
-        text-shadow: 1px 1px var(--clr-dark);
     }
 
     .tags {

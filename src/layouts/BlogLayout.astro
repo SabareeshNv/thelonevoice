@@ -6,13 +6,13 @@ import BlogPostTags from "../components/BlogPostTags.astro";
 
 import "../styles/typography.css";
 
-const { description, pubDate, tags, coverImage, coverAlt } = Astro.props;
-// Need to change title as blog post title and html page title
-// should be made different
-let { title } = Astro.props;
+const { title, description, pubDate, tags, coverImage, coverAlt } = Astro.props;
+// Need to add the site suffix for SEO
+const titleSEO = `${title} | LoneVoice.in`;
+const descSEO = `${description} | LoneVoice.in`;
 ---
 
-<BaseLayout {title} {description}>
+<BaseLayout title={titleSEO} description={descSEO}>
     <main data-pagefind-body>
         <Hero2 {title} {pubDate} {coverImage} {coverAlt} />
 
