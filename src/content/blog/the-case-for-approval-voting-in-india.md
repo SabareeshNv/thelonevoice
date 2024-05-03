@@ -14,7 +14,10 @@ How we elect our leaders is at the root of such travails. India’s current elec
 
 ## What’s the alternative then?
 
-Indulge in a thought experiment. Let us suppose that when given a ballot of choices of candidates/parties to vote for, you are allowed to choose more than one candidate. That is, you no longer have to force yourself to make just one choice (most preferred or least non-preferred) but you can choose many candidates or parties that represent your interests. India’s electoral ballot currently has a NOTA (None Of The Above) button. Think of this new method as having a MOTA (Many Of The Above) button. The candidate or party that has the most ‘tick marks’ then wins.
+
+<div class="columns">
+    Indulge in a thought experiment. Let us suppose that when given a ballot of choices of candidates/parties to vote for, you are allowed to choose more than one candidate. That is, you no longer have to force yourself to make just one choice (most preferred or least non-preferred) but you can choose many candidates or parties that represent your interests. India’s electoral ballot currently has a NOTA (None Of The Above) button. Think of this new method as having a MOTA (Many Of The Above) button. The candidate or party that has the most ‘tick marks’ then wins.
+</div>
 
 Would this change how you vote? Would this change how we choose winners? Would this produce different incentives for our politics?
 
@@ -23,6 +26,8 @@ Let’s say there are three parties A, B, and C competing in an election in a co
 There may be some ‘upper’ caste voters who support welfare economics and are against the idea of being antagonistic to Dalits. Both parties B and C are acceptable to these voters. There may be some Dalit voters who do not like socialism and for whom parties A and C may be acceptable. In this system, by virtue of not being antagonistic to any section of voters, party C may emerge as a potential winner with the most ‘tick marks’. Whereas, in the current FPTP system, voters with nuanced priorities are forced to vote for just one party that may not fully represent their entire set of preferences.
 
 This system is called Approval Voting, which is a well-researched voting methodology that is used in the United Nations, in internal primaries of many political parties in the US, and occasionally in the election of the Pope at the Vatican. It is generally preferred as a voting method in situations where the number of candidates are many, the electorate is very diverse and fragmented and there is a strong desire to reduce disharmony in elections.
+
+
 
 ![election queue](@assets/election-queue.avif "People waiting to vote in queue")
 

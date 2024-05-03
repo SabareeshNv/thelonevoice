@@ -4,40 +4,32 @@ import { slugify } from "../utils/helpers";
 const { tags } = Astro.props;
 ---
 
-<article-tag-field>
-    <div class="retro-look taged-under">Tags</div>
-    <div class="tags flex-row">
-        {tags.map((tag: string) => <a href={`/tag/${slugify(tag)}`}>#{tag}</a>)}
-    </div>
+<article-tag-field class="tags flex-row">
+    {
+        tags.map((tag: string) => (
+            <a href={`/tag/${slugify(tag)}`} class="tag">
+                # {tag}
+            </a>
+        ))
+    }
 </article-tag-field>
 
 <style>
     article-tag-field {
-        display: block;
-        margin-block-end: 1.5rem;
-    }
-
-    .taged-under {
-        font-size: var(--fs-8);
-        margin-block-start: 1em; /* To override default typography margins */
-    }
-
-    .tags {
         gap: 1em;
         margin-block-start: 0.5em; /* To override default typography margins */
     }
 
-    .tags a {
+    .tag {
         font-size: var(--fs-4);
         text-decoration: none;
-        color: var(--clr-dark);
-        background-color: var(--clr-accent);
-        padding: 0.25em;
+        background-color: var(--clr-primary);
+        color: var(--clr-light);
+        padding: 0.25em 0.5em;
         border-radius: 0.25rem;
-        box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 
         &:hover {
-            background-color: var(--clr-accent-hover);
+            background-color: var(--clr-secondary);
         }
     }
 </style>

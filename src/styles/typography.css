@@ -3,8 +3,9 @@
 }
 
 .typography {
-    max-width: 63ch;
+    max-width: 65ch;
     font-size: var(--fs-5);
+    word-spacing: 0.2rem;
 
     h1,
     h2,
@@ -12,11 +13,10 @@
     h4,
     h5,
     h6 {
-        /* text-wrap: balance; */
         font-family: var(--ff-serif);
 
         &+* {
-            margin-block-start: 0.75em;
+            margin-block-start: 1em;
         }
     }
 
@@ -45,7 +45,7 @@
     blockquote {
         padding: 1.25em 1.5em;
         border-inline-start: 4px solid #57534e;
-        /* background-color: var(--clr-accent); */
+        border-inline-start: 4px solid var(--clr-primary);
         background-color: hsl(0deg 0% 96%);
 
         @media (min-width: 600px) {
@@ -70,7 +70,7 @@
     }
 
     a {
-        color: var(--clr-brand);
+        color: var(--clr-primary);
         text-decoration: underline;
         text-underline-offset: 5px;
     }
